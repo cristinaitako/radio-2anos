@@ -5,6 +5,6 @@ function tocaSomaplausos    () {
 document.querySelector('tecla_aplausos').onclick = tocaSomaplausos();
 
 const listaDeTeclas = querySelectorAll(".tecla");
-listaDeTeclas[2].onclick = tocaSomRisada;
+listaDeTeclas[0].onclick = tocaSomAplausos;
 
 
