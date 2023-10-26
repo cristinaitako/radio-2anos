@@ -13,6 +13,6 @@ let contador = 0;
 while (contador < 9){
   //chamada para tocar o som pelo indice do elemento da lista.
   listaDeTeclas[contador].onclick = tocaSomAplausos;
-  contador = contador + 1
-  console.log(contador)
+  contador = contador + 1;
+  console.log(contador);
 }
