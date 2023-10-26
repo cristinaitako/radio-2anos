@@ -11,7 +11,7 @@ const listaDeTeclas = document.querySelectorAll(".tecla");
 let contador = 0;
 //laco de repetição while
 while (contador < listaDeTeclas.length){
-  //chamada para tocar o som pelo indice do elemento da lista.
+  //faz funcionar som com teclas.
   const efeito = listaDeTeclas[contador].classList[1];
   const idAudio = "#som_"+ efeito;
   listaDeTeclas[contador].onclick = function(){
