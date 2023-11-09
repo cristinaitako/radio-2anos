@@ -7,17 +7,15 @@ function tocaSom(idElementoAudio) {
 
 const listaDeTeclas = document.querySelectorAll(".tecla");
 
-//criar a variavel de contagem 
 let contador = 0;
-//laco de repetição while
-while (contador < listaDeTeclas.length){
+//laco de repetição "while"foi trocado por "for",tecla, efeito, idAudio e tocaSom.
+for (let contador = 0 < listaDeTeclas.length; contador = contador++;){
   const tecla = listaDeTeclas[contador]
   const efeito = tecla.classList[1]; //busca do item 1 dos botoes 
   const idAudio = `#som_${efeito}`; // uso do template string
   tecla.onclick = function(){ //funçao anomina auxiliar ao TocaSom
     tocaSom(idAudio);
   }
-  contador = contador + 1;
-  //console.log(contador);
+   //console.log(contador);
 }
 
