@@ -11,10 +11,10 @@ const listaDeTeclas = document.querySelectorAll(".tecla");
 let contador = 0;
 //laco de repetição while
 while (contador < listaDeTeclas.length){
-  //faz funcionar som com teclas.
-  const efeito = listaDeTeclas[contador].classList[1];
-const idAudio = `#som_${efeito}`;
-  listaDeTeclas[contador].onclick = function(){ //funçao anomina auxiliar ao TocaSom
+  const tecla = listaDeTeclas[contador]
+  const efeito = tecla.classList[1]; //busca do item 1 dos botoes 
+  const idAudio = `#som_${efeito}`; // uso do template string
+  tecla.onclick = function(){ //funçao anomina auxiliar ao TocaSom
     tocaSom(idAudio);
   }
   contador = contador + 1;
