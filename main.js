@@ -13,11 +13,11 @@ let contador = 0;
 while (contador < listaDeTeclas.length){
   //faz funcionar som com teclas.
   const efeito = listaDeTeclas[contador].classList[1];
-  const idAudio = "#som_"+ efeito;
+const idAudio = `#som_${efeito}`;
   listaDeTeclas[contador].onclick = function(){ //funçao anomina auxiliar ao TocaSom
     tocaSom(idAudio);
   }
   contador = contador + 1;
-  console.log(contador);
+  //console.log(contador);
 }
 
