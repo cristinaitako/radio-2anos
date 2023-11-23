@@ -18,7 +18,7 @@ for(let contador = 0 < listaDeTeclas.length; contador = contador++;){
   }
   tecla.onkeydown = function (evento){
 
-    console.log(evento)
+    console.log(evento.code)
     
     if (evento.code !="Tab" ){
     tecla.classList.add("ativa");
@@ -28,6 +28,8 @@ for(let contador = 0 < listaDeTeclas.length; contador = contador++;){
     tecla.classList.remove("ativa");
   }
 }
+
+
 
 
 
